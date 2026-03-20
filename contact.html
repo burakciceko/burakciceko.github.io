@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="main.css" rel="stylesheet">
-
-    <title>Apps Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Pebble Blocks</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        main { gap: 32px; }
+        .back { font-size: 13px; color: #9E8E84; text-decoration: none; }
+        .back:hover { color: #2C2420; }
+        .contact-box { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+        .contact-box h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+        .contact-box p { font-size: 15px; color: #7A6A62; line-height: 1.6; max-width: 320px; }
+    </style>
 </head>
-
-<body id="backgroundBody">
-
-    <header>
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="privacy.html">Privacy</a></li>
-            </ul>
-          </nav>
-
-          <h1> Contact </h1>
-    </header>
-
-    <div id="textBody">
-        <h1 style="font-size:300%;">Seven7</h1>
-        <p style="font-size:160%;">Contact: infoseven7games@gmail.com</p>
-        <div>
-
+<body>
+    <main>
+        <a class="back" href="index.html">← Home</a>
+        <div class="contact-box">
+            <div style="font-size:56px">🪨</div>
+            <h1>Pebble Blocks</h1>
+            <p>For support, feedback, or any questions about the app, please leave a review on the App Store — we read every one.</p>
+            <a class="store-btn" href="https://apps.apple.com/tr/app/pebbleblocks/id6760610491" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814 248" width="120">
+                    <rect width="814" height="248" rx="30" fill="#000"/>
+                    <text x="230" y="90" fill="white" font-family="-apple-system,sans-serif" font-size="52" font-weight="300">Download on the</text>
+                    <text x="200" y="175" fill="white" font-family="-apple-system,sans-serif" font-size="86" font-weight="600">App Store</text>
+                </svg>
+            </a>
         </div>
-
-    </div>
+        <footer style="border-top: 1px solid #E8E0D8; padding-top: 24px; width: 100%;">
+            <div style="display:flex; gap:10px; font-size:13px; color:#9E8E84;">
+                <a href="privacy.html" style="color:#9E8E84; text-decoration:none;">Privacy Policy</a>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
